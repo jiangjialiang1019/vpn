@@ -18,7 +18,7 @@ Total cost of each VPN Gateway= instance fee + traffic fee + SSL specification f
 
 -   SSL specification fee
 
-    After the SSL-VPN function is enabled, you must select the SSL specification according to the maximum number of clients connected simultaneously. The fee varies by specification. 
+    After the SSL-VPN function is enabled, you must select the SSL specification according to the maximum number of clients connected simultaneously. The fee varies by specification.
 
     **Note:** The SSL specification fee is charged only when the SSL-VPN function is enabled.
 
@@ -32,7 +32,7 @@ VPN Gateway offers different bandwidth specifications, and the instance fee also
 |Region|10 Mbps \(USD/hour\)|100 Mbps \(USD/hour\)|200 Mbps \(USD/hour\)|500 Mbps \(USD/hour\)|1000 Mbps \(USD/hour\)|
 |:-----|:-------------------|:--------------------|---------------------|---------------------|----------------------|
 |Mainland China|0.059|0.209|0.209|0.767|0.767|
-|Hong Kong|0.087|0.262|0.262|1.025|1.025|
+|China \(Hong Kong\)|0.087|0.262|0.262|1.025|1.025|
 |Singapore|0.087|0.262|0.262|1.025|1.025|
 |Australia \(Sydney\)|0.087|0.389|0.389|1.088|1.088|
 |US \(Virginia\)|0.066|0.295|0.295|0.826|0.826|
@@ -52,7 +52,7 @@ VPN Gateway offers different bandwidth specifications, and the instance fee also
 |Region|Traffic fee \(USD/Gbps/hour\)|
 |:-----|:----------------------------|
 |Mainland China|0.125|
-|Hong Kong| |
+|China \(Hong Kong\)| |
 |Singapore|0.117|
 |Australia \(Sydney\)|0.130|
 |US \(Virginia\)|0.078|
