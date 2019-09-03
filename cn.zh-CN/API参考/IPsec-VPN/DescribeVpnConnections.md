@@ -12,9 +12,7 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|Action|String|是|DescribeVpnConnections|要执行的操作。
-
- 取值： **DescribeVpnConnections**。
+|Action|String|是|DescribeVpnConnections|要执行的操作，取值： **DescribeVpnConnections**。
 
  |
 |RegionId|String|是|cn-hangzhou|IPsec连接所在的地域。
@@ -71,7 +69,7 @@
 |LocalId|String|116.xx.xx.64|本端ID，支持FQDN和IP格式，默认为当前选取的VPN网关IP地址。
 
  |
-|Psk|String|pgw6dy7dxxxxxxxx|预共享秘钥。
+|Psk|String|pgw6dy7dxxxxxxxx|预共享密钥。
 
  |
 |RemoteId|String|139.xx.xx.167|对端ID，支持FQDN和IP格式，默认为当前选取的用户网关IP地址。
@@ -121,7 +119,7 @@
 -   **ipsec\_sa\_established**表示第二阶段协商成功。
 
  |
-|EffectImmediately|Boolean|true|是否立即生效。
+|EffectImmediately|Boolean|true|是否立即生效：
 
  -   **是**：配置变更时触发重连。
 -   **否**：有流量时触发重连。重连有可能导致流量闪断。
