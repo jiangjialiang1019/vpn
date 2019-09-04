@@ -101,8 +101,9 @@ no matching proposal found, sending NO_PROPOSAL_CHOSEN
 
 多网段场景下，建议使用IKE V2协议。
 
--   如果已经使用了IKE V2协议但问题仍然存在，建议检查本地IDC的VPN网关的SA状态，正常情况下只有一个SA，例如172.30.96.0/19 === 10.0.0.0/8 172.30.128.0/17。
--   如果存在多个SA说明本地IDC的VPN网关使用非标准的IKE V2协议，此时只能使用多个IPsec连接将各个网段连接起来。例如可以将IPsec连接：172.30.96.0/19 <=\> 10.0.0.0/8 172.30.128.0/17拆分为IPsec连接A：172.30.96.0/19 <=\> 10.0.0.0/8和IPsec连接B：172.30.96.0/19 <=\> 172.30.128.0/17。
+如果已经使用了IKE V2协议但问题仍然存在，建议检查本地IDC的VPN网关的SA状态，正常情况下只有一个SA，例如172.30.96.0/19 === 10.0.0.0/8 172.30.128.0/17。
+
+如果存在多个SA说明本地IDC的VPN网关使用非标准的IKE V2协议，此时只能使用多个IPsec连接将各个网段连接起来。例如可以将IPsec连接：172.30.96.0/19 <=\> 10.0.0.0/8 172.30.128.0/17拆分为IPsec连接A：172.30.96.0/19 <=\> 10.0.0.0/8和IPsec连接B：172.30.96.0/19 <=\> 172.30.128.0/17。
 
 **说明：** 拆分IPsec连接后由于两个IPsec连接需要共享第一阶段SA，所以两个IPsec连接的第一阶段协商参数需保持一致。
 
@@ -115,7 +116,7 @@ no matching proposal found, sending NO_PROPOSAL_CHOSEN
 1.  运行`nat disable`命令，关闭出接口的NAT功能。
 2.  配置NAT策略。
 
-    ```
+    ``` {#codeblock_0x9_b4l_ucg}
     nat-policy interzone trust untrust outbound
     policy 0
     action no-nat
