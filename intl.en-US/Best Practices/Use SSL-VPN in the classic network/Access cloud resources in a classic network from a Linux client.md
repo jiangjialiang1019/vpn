@@ -4,15 +4,13 @@ This topic describes how to use the SSL-VPN function of a VPN Gateway to access 
 
 Note that if you have configured the SSL-VPN, you only need to complete Step 5.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763605_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616253605_en-US.png)
 
 ## Prerequisites {#section_oth_2mg_xdb .section}
 
 Before you begin, the following conditions must be met:
 
 -   The Linux client can access the Internet.
-
--   You have logged on to the new console.
 
 -   A VPC is created and the CIDR block of the VPC is set to 172.16.0.0/12. If you use an existing VPC, the VPC must meet the following conditions:
 
@@ -54,7 +52,7 @@ To create a VPN Gateway, follow these steps:
 
     -   **SSL Connections**: Select the maximum number of clients to which you want to connect simultaneously.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763606_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616253606_en-US.png)
 
 5.  Go back to the VPN Gateways page to check the created VPN Gateway.
 
@@ -62,7 +60,7 @@ To create a VPN Gateway, follow these steps:
 
     **Note:** It takes one to five minutes to create a VPN Gateway.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763607_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616273607_en-US.png)
 
 
 ## Step 2: Create an SSL server {#section_v4f_2mg_xdb .section}
@@ -89,7 +87,7 @@ To create an SSL server, follow these steps:
 
     -   **Advanced Configuration**: Use the default advanced configuration.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763608_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616313608_en-US.png)
 
 
 ## Step 3: Create a client certificate {#section_zw2_24g_xdb .section}
@@ -101,7 +99,7 @@ To create a client certificate, follow these steps:
 3.  In the Create Client Certificate dialog box, enter a client certificate name, select the corresponding SSL server, and then click **OK**.
 4.  On the SSL Clients page, find the created client certificate, and then click **Download** to download the client certificate.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763609_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616313609_en-US.png)
 
 
 ## Step 4: Configure the client {#section_qdz_j4g_xdb .section}
@@ -134,7 +132,7 @@ To establish a ClassicLink connection, follow these steps:
 6.  In the left-side navigation pane, click **Instances**.
 7.  Select one or more ECS instances in the target classic network, and choose**More** \> **Connect to VPC** .
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763610_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616323610_en-US.png)
 
 8.  In the displayed dialog box, select the target VPC, and then click **OK**.
 9.  In the left-side navigation pane, choose**Network & Security** \> **Security Groups** .
@@ -155,11 +153,11 @@ To establish a ClassicLink connection, follow these steps:
 
 11. Go back to the ECS console, click the Column Filters icon on the right, select **Connection Status** in the displayed dialog box, and then click **OK**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763611_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616333611_en-US.png)
 
 12. Check the connection status of the ECS instance.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15687924763612_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13374/15688616403612_en-US.png)
 
     After the configuration, you can access the applications deployed in the connected classic network ECS instance from the Linux client.
 
